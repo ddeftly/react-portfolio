@@ -1,3 +1,7 @@
+@font-face {
+    font-family:'Raleway';
+    src: url(https://fonts.googleapis.com/css?family=Raleway)
+}
 
 /* HOME */
 
@@ -5,70 +9,40 @@
     position:absolute;
     width:100%;
     height:100%;
-    background-image: url('./mountain.jpg');
+    background:#0e0d0d;
     background-size: cover;
 }
 
-.headbar{
-    background:#444554;
-    height:500px;
-    width:100%;
-    opacity:.7;
-    position:absolute;
-    z-index:0;
-}
-.blackoverlay{
-    height:100%;
-    width:100%;
-    position:absolute;
-    z-index:0;
-    background-color:#444554;
-}
-
-/* MAINHEADER */
-
-.outergrid {
-    height:500px;
-}
-
-.innergrid {
+.headlines {
     position:relative;
-    top:50%;
-    height:2in;
-    display:grid;
-    grid-template: 1fr / 1fr;
-    justify-items: center;
-    align-items: center;
-    color:white;
-    font-size: 2em;
-    font-family: 'Libre Baskerville', serif;
-    z-index:4;
+    top:40%; 
+    margin-left:10em; 
+    margin-right:10em; 
+    display:flex;
+    justify-content:space-around;
 }
 
-#g1 {
-    padding-right: 100;
-    margin-bottom: 0;
-    align-self: end;
-    justify-self:left;
-    font-size:1.2em;
-    position:relative;
-    right:50px;
+.codeheadline {
+    position:absolute; 
+    top:40%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    z-index:2;
 }
 
-#g2 {
-    margin-top: 0;
-    padding:10px 10px 8px 10px;
-    align-self: start;
-    border:1px white solid;
+.drawlines {
+    position: absolute;
+    top:43.5%;
+    left:50%;
+    margin-left:-46px;
+    min-height:271px;
+    min-width:92px;
 }
 
-/* DRAWRECTS */
-
-.drawcontainer{
-    height:50px;
-    width:525px;
-    z-index:1;
-    position:absolute;
-    top:322.7px;
-    left:577.5px;
+.downarrow {
+    position: relative;
+    top:66.2%;
+    display: flex;
+    justify-content: center;
 }
