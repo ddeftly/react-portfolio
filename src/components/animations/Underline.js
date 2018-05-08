@@ -4,7 +4,7 @@ import { tween } from 'popmotion';
 
 const DrawPath = posed.path({
     idle:{
-        pathLength:10,
+        pathLength:4,
         transition:(props) => tween({...props, duration:500})
     },
     animate:{

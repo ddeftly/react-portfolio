@@ -1,4 +1,9 @@
-.iconContainer {
+.iconContainer1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconContainer2 {
     display: flex;
     justify-content: space-evenly;
 }

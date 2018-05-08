@@ -8,7 +8,7 @@ export class WebIcons extends React.Component{
 
     render() {
         return(
-            <div className='iconContainer'>
+            <div className='iconContainer1'>
                 <HTMLIcon />
                 <CSSIcon/>
                 <JSIcon/>
@@ -23,7 +23,7 @@ export class AppIcons extends React.Component{
 
     render() {
         return(
-            <div className='iconContainer'>
+            <div className='iconContainer1'>
                 <JSIcon/>
                 <ReactIcon tooltipLabel='React Native'/>
                 <AppleIcon/>
@@ -37,7 +37,7 @@ export class DataIcons extends React.Component{
 
     render() {
         return(
-            <div className='iconContainer'>
+            <div className='iconContainer1'>
                 <PythonIcon/>
                 <SQLIcon/>
                 <DescrStatIcon/>
@@ -51,7 +51,7 @@ export class BlogIcons extends React.Component{
 
     render() {
         return(
-            <div className='iconContainer'>
+            <div className='iconContainer2'>
                 <MediumIcon/>
                 <WordPressIcon/> 
                 <BloggerIcon/>  
@@ -64,7 +64,7 @@ export class StartupIcons extends React.Component{
 
     render() {
         return(
-            <div className='iconContainer'>
+            <div className='iconContainer1'>
                 <LearnIcon/>
                 <IdeaIcon/>
                 <CalIcon/> 
@@ -78,7 +78,7 @@ export class HobbyIcons extends React.Component{
 
     render() {
         return(
-            <div className='iconContainer'>
+            <div className='iconContainer2'>
                 <RedditIcon/>
                 <GameIcon/>
                 <HeartHandIcon/> 

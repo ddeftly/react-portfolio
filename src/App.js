@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
-import Hub from './pages/Hub'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Hub from './pages/Hub';
 
-class App extends Component {
-
-  render() {
-    return (
-      <div>
-        <Hub/>
-      </div>
-    );
-  }
-}
+export const App = () => (
+  <Switch>
+    <Route path='/hub' component={Hub}/>
+    <Home/>
+  </Switch>
+)
 
 export default App;
