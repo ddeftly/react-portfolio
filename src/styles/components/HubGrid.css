@@ -1,0 +1,28 @@
+#hubGrid {
+    display: grid;
+    height:30.5em;
+    grid-template: 1fr / 1fr 1fr;
+    align-items: center;
+}
+
+#textGrid {
+    grid-area: 1 / 1 / 1 / 1;
+    margin-left:2em;
+}
+
+.outerflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox {
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top:1.3em;
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
+}

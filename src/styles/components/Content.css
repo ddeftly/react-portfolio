@@ -1,0 +1,28 @@
+h2, p {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 200;
+    letter-spacing: .5px;
+}
+
+
+#line1 {
+    margin-bottom: .3em;
+}
+
+#line2 {
+    margin-top: .3em;
+    margin-bottom: .3em;
+}
+
+.textContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#textLine1 {
+    margin-bottom:.25em;
+}
+
+#textLine2 {
+    margin-top:.25em;
+}

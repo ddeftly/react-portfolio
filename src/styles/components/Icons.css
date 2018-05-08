@@ -1,0 +1,8 @@
+.iconContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tooltip {
+    font-family: 'Roboto';
+}
