@@ -23,6 +23,6 @@
     justify-content: center;
     position: relative;
     top:1.3em;
-    border-top: white 1px solid;
-    border-bottom: white 1px solid;
+    border-top: white .25px solid;
+    border-bottom: white .25px solid;
 }

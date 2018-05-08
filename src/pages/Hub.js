@@ -1,6 +1,8 @@
 import React from 'react';
-import HubGrid from '../components/HubGrid'
-import '../styles/pages/Hub.css'
+import { Fade, QuestionLine } from '../components/animations/Headings';
+import HubGrid from '../components/HubGrid';
+import NavItem from '../components/Navbar';
+import '../styles/pages/Hub.css';
 
 export default class Hub extends React.Component {
     render() {
@@ -10,20 +12,20 @@ export default class Hub extends React.Component {
                 <div className='layout'>
 
                     <div className='greetings'>
-                        <h1>Hi, I'm David Figueroa.</h1>
-                        <h2>But who are <span style={{borderBottom:'white 1px solid'}}>you</span> looking for?</h2>
+                        <Fade timeout={1500}><h1>Hi, I'm David Figueroa.</h1></Fade>
+                        <Fade timeout={4000}><h2 style={{fontFamily:'Raleway', fontWeight:500}}>But who are you looking for?</h2><QuestionLine/></Fade>
                     </div>
-                    
-                    <div id='textinp'>
-                        <HubGrid />
-                    </div>
+                    <Fade timeout={6000}>
+                        <div id='textinp'>
+                            <HubGrid />
+                        </div>
 
-                    <div className='navpanel'>
-                        <a href='https://medium.com/@dfiggy92'><h3>Posts</h3></a>
-                        <a href='https://github.com/dfigue92'><h3>Projects</h3></a>
-                        <a href='https://www.linkedin.com/in/dfigue92'><h3>Connect</h3></a>
-                    </div>
-
+                        <div className='navpanel'>
+                            <NavItem to='https://medium.com/@dfiggy92' title='Posts'/>
+                            <NavItem to='https://github.com/dfigue92' title='Projects'/>
+                            <NavItem to='https://www.linkedin.com/in/dfigue92' title='Connect'/>
+                        </div>
+                    </Fade>
                 </div>
 
             </div>

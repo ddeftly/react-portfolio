@@ -25,7 +25,7 @@ class Home extends Component {
                 <DrawBlackLines/>
             </div>
             <div className='downarrow'>
-                <Link to="/hub"><RotateDiv><DrawDownArrow/></RotateDiv></Link>
+                <RotateDiv><DrawDownArrow><Link to="/hub"/></DrawDownArrow></RotateDiv>
                 <Route path="/hub" component={Hub} />
             </div>
         </div>

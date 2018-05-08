@@ -430,38 +430,3 @@ export class QuestionIcon extends React.Component{
         )
     }
 }
-
-// Null quotes //
-
-export const ShrugEmoji = () => (
-    <div>
-        <div className='textContainer'>
-            <h3 id='textLine1'>This isn't smart enough yet</h3>
-        </div>
-        <div className='textContainer'>
-            <h3 id='textLine2'>¯\_(ツ)_/¯</h3>
-        </div>
-    </div>
-)
-
-export const AnotherCastle = () => (
-    <div>
-        <div className='textContainer'>
-            <h3 id='textLine1'>Have you tried another castle?</h3>
-        </div>
-        <div className='textContainer'>
-            <h3 id='textLine2'>( ͡° ͜ʖ ͡°)</h3>
-        </div>
-    </div>
-)
-
-export const TryAgain = () => (
-    <div>
-        <div className='textContainer'>
-            <h3 id='textLine1'>Yeah...try again...</h3>
-        </div>
-        <div className='textContainer'>
-            <h3 id='textLine2'>ಠ_ಠ</h3>
-        </div>
-    </div>
-)

@@ -75,7 +75,7 @@ export default class Content extends React.Component{
     render() {
         if (testInput(this.props.entry) === 'WebDev') {
         return (
-            <div>
+            <div className='contentContainer'>
                 <h2 id='line1'>Full-stack, at your service.</h2>
                 <p id='line2'>I write clean, readable code for pixel-perfect design.</p>
                 <WebIcons/>
@@ -83,40 +83,40 @@ export default class Content extends React.Component{
         }
         else if (testInput(this.props.entry) === 'AppDev') {
             return (
-                <div>
-                    <h2>Your app, every device.</h2>
-                    <p>I use React Native to write sleek, fast mobile apps.</p>
+                <div className='contentContainer'>
+                    <h2 id='line1'>Your app, every device.</h2>
+                    <p id='line2'>I use React Native to write sleek, fast mobile apps.</p>
                     <AppIcons/>
                 </div>)
         }
         else if (testInput(this.props.entry) === 'Author') {
             return (
-                <div>
-                    <h2>(Code) => return(English)</h2>
-                    <p>I publish tech articles for coders and normal folk alike.</p>
+                <div className='contentContainer'>
+                    <h2 id='line1'>(Code) => return(English)</h2>
+                    <p id='line2'>I publish tech articles for coders and normal folk alike.</p>
                     <BlogIcons/>
                 </div>)
         }
         else if (testInput(this.props.entry) === 'Data Analyst') {
             return (
-                <div>
-                    <h2>Powered by data.</h2>
-                    <p>I can teach your machines to think for themselves.</p>
+                <div className='contentContainer'>
+                    <h2 id='line1'>Powered by data.</h2>
+                    <p id='line2'>I can teach your machines to think for themselves.</p>
                     <DataIcons/>
                 </div>)
         }
         else if (testInput(this.props.entry) === 'Startup') {
             return (
-                <div>
-                    <h2>Start-up ready.</h2>
-                    <p>My #1 priority is to make your life easier.</p>
+                <div className='contentContainer'>
+                    <h2 id='line1'>Start-up ready.</h2>
+                    <p id='line2'>My #1 priority is to make your life easier.</p>
                     <StartupIcons/>
                 </div>)
         }
         else if (testInput(this.props.entry) === 'Hobbies') {
             return (
-                <div>
-                    <h2>50% nerd, 50% health nut</h2>
+                <div className='contentContainer'>
+                    <h2 id='line1'>50% nerd, 50% health nut</h2>
                     <p>When I'm not memeing on Reddit, I'm running marathons</p>
                     <HobbyIcons/>
                 </div>)
@@ -127,10 +127,10 @@ export default class Content extends React.Component{
             return (
                 <div>
                     <div className='textContainer'>
-                        <h3 id='textLine1'>{quote}</h3>
+                        <h2 id='textLine1'>{quote}</h2>
                     </div>
                     <div className='textContainer'>
-                        <h3 id='textLine2'>{emoji}</h3>
+                        <h2 id='textLine2'>{emoji}</h2>
                     </div>
                 </div>
             )
