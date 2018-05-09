@@ -16,10 +16,10 @@ const textfieldStyle = {
         color: '#FAFAFA',
       },
       floatingLabelFocusStyle: {
-        color: '#00E5FF',
+        color: '#8789C0',
       },
       underlineFocusStyle:{
-          color:'#FF1744'
+        borderColor:'#8789C0'
       }
 }
 
