@@ -463,9 +463,7 @@ export  class DrawLine extends React.Component{
         setTimeout(() => {
             this.setState({ stage:'done' })
         },interval*8)
-        setTimeout(() => {
-            this.setState({ stage:'wipe' })
-        },interval*11.5)
+        
     }
 
     render(){

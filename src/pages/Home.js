@@ -10,7 +10,7 @@ import {
 } from "../components/animations/HomeAnimations";
 import posed from "react-pose";
 import { tween } from "popmotion";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import Hub from "./Hub";
 import "../styles/pages/Home.css";
 
