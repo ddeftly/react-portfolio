@@ -1,5 +1,5 @@
 .layout {
-    margin:5em 20em;
+    margin:3em 20em 5em 20em;
     color:white;
 }
 
@@ -34,7 +34,6 @@
 
 .navpanel {
     position:relative;
-    top:1.5em;
     display:flex;
     justify-content: space-evenly;
     font-family: 'Raleway', sans-serif;
