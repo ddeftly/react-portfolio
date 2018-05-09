@@ -7,13 +7,11 @@
 
 
 .headlines {
-    margin-top:20em;
+    margin-top:16.5em;
     margin-left:10em; 
     margin-right:10em; 
     display:flex;
     justify-content:space-around;
-    position:relative;
-    top:2.3em;
 }
 
 .animationContainer {
@@ -21,11 +19,12 @@
     height:35%;
     min-height:35%;
     grid-template: 10% 1fr 5% / 1fr;
+    justify-items: center;
 }
 
 .codeheadline {
-    top:40%;
-    width:100%;
+    width:10%;
+    grid-area: 1 / 1 / 1 / 1;
     display:flex;
     justify-content:center;
     z-index:2;
@@ -41,7 +40,7 @@
     position: relative;
     right:2.8em;
     bottom:.5em;
-
+    z-index: -1;
 }
 
 .downarrow {

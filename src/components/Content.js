@@ -14,7 +14,7 @@ const inputLists = {
     startup: ['deadlines','ideas','learn new','learn','collaborate','hustle','adapt','contribute','professional','get things done','manage','lead', 'work','hard'],
 
     // Misc //
-    hobbies: ['fun','relax','friend','hobbies','chill','balance','laugh','bud','good']
+    hobbies: ['fun','relax','friend','hobbies','chill','balance','laugh','bud', 'friend','good']
 }
 
 // No regex match return quotes //
@@ -116,8 +116,8 @@ export default class Content extends React.Component{
         else if (testInput(this.props.entry) === 'Hobbies') {
             return (
                 <div className='contentContainer'>
-                    <h2 id='line1'>50% nerd, 50% health-nut</h2>
-                    <p>When I'm not memeing on Reddit, I'm running marathons</p>
+                    <h2 id='line1'>50% coder, 50% gamer, 100% chill</h2>
+                    <p>Don't let your memes be dreams.</p>
                     <HobbyIcons/>
                 </div>)
         }
