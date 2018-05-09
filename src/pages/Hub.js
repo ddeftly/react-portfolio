@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Fade, QuestionLine } from '../components/animations/Headings';
 import HubGrid from '../components/HubGrid';
 import NavItem from '../components/Navbar';
@@ -8,7 +9,9 @@ export default class Hub extends React.Component {
     render() {
         return(
             <div className='hub'>
-
+                <Helmet>
+                    <style>{'body {background-color:#0e0d0d;}'}</style>
+                </Helmet>
                 <div className='layout'>
 
                     <div className='greetings'>

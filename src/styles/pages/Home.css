@@ -5,26 +5,25 @@
 
 /* HOME */
 
-.homepage {
-    position:absolute;
-    top:0;
-    width:100%;
-    height:100%;
-    background:#0e0d0d;
-    background-size: cover;
-}
 
 .headlines {
-    position:relative;
-    top:40%; 
+    margin-top:20em;
     margin-left:10em; 
     margin-right:10em; 
     display:flex;
     justify-content:space-around;
+    position:relative;
+    top:2.3em;
+}
+
+.animationContainer {
+    display: grid;
+    height:35%;
+    min-height:35%;
+    grid-template: 10% 1fr 5% / 1fr;
 }
 
 .codeheadline {
-    position:absolute; 
     top:40%;
     width:100%;
     display:flex;
@@ -32,18 +31,24 @@
     z-index:2;
 }
 
-.drawlines {
-    position: absolute;
-    top:43.5%;
-    left:50.05%;
-    margin-left:-46px;
-    min-height:271px;
-    min-width:92px;
+.lineContainer {
+    height:241px;
+    min-height: 241px;
+    grid-area: 2 / 1 / 2 / 1;
+    display:flex;
+    justify-content: center;
+    margin:0;
+    position: relative;
+    right:2.8em;
+    bottom:.5em;
+
 }
 
 .downarrow {
-    position: relative;
-    top:66.2%;
+    grid-area: 3 / 1 / 3 / 1;
+    height:30px;
     display: flex;
     justify-content: center;
+    margin-top:0;
+    bottom:1.7em;
 }

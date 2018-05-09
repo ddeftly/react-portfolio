@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from 'react-helmet';
 import {
   DrawSimple,
   DrawClean,
@@ -18,27 +19,34 @@ class Home extends Component {
   render() {
     return (
       <div className="homepage">
+        <Helmet>
+          <style>{'body {background-color:#0e0d0d;}'}</style>
+        </Helmet>
+
         <div className="headlines">
           <DrawSimple />
           <DrawClean />
           <DrawIntrig />
         </div>
-        <div className="codeheadline">
-          <DrawCode />
-        </div>
-        <div className="drawlines">
-          <DrawLine />
-        </div>
-        <div className="drawlines">
-          <DrawBlackLines />
-        </div>
-        <div className="downarrow">
-        <Link to="/hub">
-          <RotateDiv>
-            <DrawDownArrow/>           
-          </RotateDiv>
-        </Link>
-          <Route path="/hub" component={Hub} />
+
+        <div className='animationContainer'>
+          <div className="codeheadline">
+            <DrawCode />
+          </div>
+
+          <div className='lineContainer'>
+              <DrawLine />
+              <DrawBlackLines />
+          </div>
+
+            <div className="downarrow">
+              <Link to="/hub">
+                <RotateDiv>
+                  <DrawDownArrow/>           
+                </RotateDiv>
+              </Link>
+                <Route path="/hub" component={Hub} />
+            </div>
         </div>
       </div>
     );

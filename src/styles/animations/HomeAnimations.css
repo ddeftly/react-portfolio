@@ -16,7 +16,9 @@
 /* POSITIONING CIRCUIT LINES */
 
 .line {
-    margin:'0 auto';
+    min-height:'50px';
+    position:relative;
+    margin:0;
 }
 
 #L1-1 {

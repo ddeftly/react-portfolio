@@ -1,11 +1,3 @@
-.hub {
-    position:absolute;
-    top:0;
-    width:100%;
-    height:100%;
-    background:#0e0d0d;
-    background-size: cover;
-}
 
 .layout {
     margin:5em 20em;
