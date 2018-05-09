@@ -423,7 +423,7 @@ export class QuestionIcon extends React.Component{
                         <li>develop beautiful websites</li>
                         <li>create multiplatform apps</li>
                         <li>analyze {'&'} visualize data</li>
-                        <li>have a good time</li>
+                        <li>write compelling blog posts</li>
                 </Tooltip>                    
             </div>
 

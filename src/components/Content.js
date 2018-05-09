@@ -7,11 +7,11 @@ import '../styles/components/Content.css';
 const inputLists = {
 
     // Professional  // 
-    webDeveloper: ['web', 'develop', 'front', 'back', 'end','react','javascript','html','css'],
-    appDeveloper: ['app','mobile','ios','android','native'],
+    webDeveloper: ['web', 'develop', 'front', 'back', 'end','react','javascript','html','css','code','hack','design'],
+    appDeveloper: ['app','mobile','ios','iphone','apple','android','native'],
     author: ['write','blog','publish','share','Medium'],
     dataAnalyst: ['analyze','data','science','set','machine','learning','statistic'],
-    startup: ['deadlines','ideas','learn new','learn','collaborate','hustle','adapt','contribute','professional','get things done','manage','lead', 'work','hard'],
+    startup: ['plan','deadlines','ideas','learn new','learn','collaborate','hustle','adapt','contribute','professional','get things done','manage','lead', 'work','hard'],
 
     // Misc //
     hobbies: ['fun','relax','friend','hobbies','chill','balance','laugh','bud', 'friend','good']
@@ -24,7 +24,7 @@ const nullQuotes = {
         'Your princess is in another castle',
         'Yeah...try again...',
         'That\'s not the magic word',
-        'All good stories come to an end...'
+        'This is not the answer you\'re looking for'
     ],
     emojis: [
         '¯\\_(ツ)_/¯',
@@ -85,7 +85,7 @@ export default class Content extends React.Component{
             return (
                 <div className='contentContainer'>
                     <h2 id='line1'>Your app, every device.</h2>
-                    <p id='line2'>I use React Native to write sleek, fast mobile apps.</p>
+                    <p id='line2'>I use React Native to write beautiful, responsive mobile apps.</p>
                     <AppIcons/>
                 </div>)
         }

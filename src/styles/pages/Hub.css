@@ -1,11 +1,13 @@
 .layout {
-    margin:0 20em 0em 20em;
+    margin:0 20em 0 20em;
     color:white;
     
 }
 
+
 .greetings {
     position: relative;
+    top:2em;
     width:100%;
     font-family: 'Raleway',sans-serif;
     letter-spacing: .7px;
@@ -28,7 +30,7 @@
 
 .hubgrid {
     position:relative;
-    bottom:2em;
+    bottom:0em;
 }
 
 /* NavBar */

@@ -1,0 +1,14 @@
+.navDrawer {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.navContainer {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.iconButton{
+    transform: scale(.6);
+    position: relative;
+}
