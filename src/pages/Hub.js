@@ -23,7 +23,7 @@ export default class Hub extends React.Component {
                                 I'm David Figueroa.</h1>
                         </Fade>
                         <Fade timeout={4000}>
-                            <h2 id='titleQuestion'>But who are you looking for?</h2>
+                            <h2 id='titleQuestion'>But who are <span style={{borderBottom:'.25px solid white'}}>you</span> looking for?</h2>
                         </Fade>
                     </div>
                     <Fade timeout={6000}>

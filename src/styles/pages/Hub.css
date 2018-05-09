@@ -23,7 +23,8 @@
 #titleQuestion {
     font-family: 'Raleway';
     font-weight: bold;
-
+    position: relative;
+    bottom:1em;
 }
 
 /* HubGrid */
