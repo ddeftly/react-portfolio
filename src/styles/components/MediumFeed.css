@@ -1,0 +1,41 @@
+.postContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:3em 15% 3em 15%;
+    padding:0 1em;
+}
+
+#latest {
+    margin:0%;
+    color:#FF206E;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+/* MOBILE */
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .postContainer {
+        margin:1em 1em;
+    }
+    #latest {
+        right:1em;
+        top:1em;
+    }
+}
+
+/* LAPTOPS & TABLETS (LANDSCAPE) */
+@media only screen and (min-width:1024px) and (max-width:1439px), 
+(min-width:768px) and (max-width:1023px) and (orientation:landscape) {
+    .postContainer {
+        margin:1em 1em 0 1em;
+    }
+    #latest {
+        margin:1em 0;
+        top:.5em;
+    }    
+}

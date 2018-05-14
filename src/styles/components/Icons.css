@@ -11,3 +11,14 @@
 .tooltip {
     font-family: 'Roboto';
 }
+
+.feedIcon {
+    margin:0 3em;
+}
+
+/* MOBILE */
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .feedIcon {
+        margin:0 1em;
+    }
+}

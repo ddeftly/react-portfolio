@@ -1,8 +1,12 @@
 import React from 'react';
-import {Helmet} from 'react-helmet';
-import {Fade} from '../components/animations/Headings';
+import Feed from './Feed'
+import { Helmet } from 'react-helmet';
+import { FadeRight, FadeLeft } from '../components/animations/Headings';
 import HubGrid from '../components/HubGrid';
-import NavDrawer from '../components/Navbar';
+import MediaQuery from 'react-responsive';
+import MobileDialog from '../components/Misc/MobileDialog';
+import { DrawDownArrow } from '../components/animations/HomeAnimations'
+import { Route, Link } from "react-router-dom";
 import '../styles/pages/Hub.css';
 
 export default class Hub extends React.Component {
@@ -10,31 +14,44 @@ export default class Hub extends React.Component {
         return (
             <div className='hub'>
                 <Helmet>
-                    <style>
-                        {
-                            'body {background-color:#0e0d0d;}'
-                        }</style>
+                    <style>{'body {background-color:#0e0d0d;}'}</style>
                 </Helmet>
-                <div className='layout'>
+                <div className='hubLayout'>
 
                     <div className='greetings'>
-                        <Fade timeout={1500}>
-                            <h1 id='titleName'>Hi.<br/>
-                                I'm David Figueroa.</h1>
-                        </Fade>
-                        <Fade timeout={4000}>
-                            <h2 id='titleQuestion'>But who are <span style={{borderBottom:'.25px solid white'}}>you</span> looking for?</h2>
-                        </Fade>
+                        
+                            <h1 id='titleName'><FadeRight timeout={animationTimings.greet}>Hi.</FadeRight>
+                            <FadeRight timeout={animationTimings.name}>I'm David Figueroa.</FadeRight></h1>
+                        
+                        <FadeLeft timeout={animationTimings.question}>
+                            <h2 id='titleQuestion'>But who are you looking for?</h2>
+                        </FadeLeft>
                     </div>
-                    <Fade timeout={6000}>
+                    <FadeRight timeout={animationTimings.hubgrid}>
+                        <MediaQuery query='(max-device-width:480px)'>
+                            <div id='dialog'><MobileDialog/></div>
+                        </MediaQuery>
                         <div className='hubgrid'>
                             <HubGrid/>
-                            <NavDrawer/>
                         </div>
-                    </Fade>
+                        <div className="downarrow">
+                            <Link to="/feed">
+                                <DrawDownArrow interval={animationTimings.arrow}/>           
+                            </Link>
+                            <Route path="/feed" component={Feed} />
+                        </div>
+                    </FadeRight>
                 </div>
 
             </div>
         )
     }
 };
+
+const animationTimings = {
+    greet:1500,
+    name:3000,
+    question:5500,
+    hubgrid:8000,
+    arrow:15000
+}

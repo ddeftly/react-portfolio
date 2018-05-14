@@ -1,17 +1,15 @@
-.layout {
-    margin:0 20em 0 20em;
+.hubLayout {
+    margin:2% 20% 2% 20%;
     color:white;
-    
 }
-
 
 .greetings {
     position: relative;
     top:2em;
-    width:100%;
+    width:45%;
     font-family: 'Raleway',sans-serif;
     letter-spacing: .7px;
-    min-width:10em;
+    min-width:100%;
 }
 
 #titleName {
@@ -21,10 +19,17 @@
 }
 
 #titleQuestion {
+    min-width:100%;
     font-family: 'Raleway';
     font-weight: bold;
     position: relative;
     bottom:1em;
+}
+
+#dialog {
+    display: flex;
+    justify-content: center;
+    margin-top:3em;
 }
 
 /* HubGrid */
@@ -34,20 +39,17 @@
     bottom:0em;
 }
 
-/* NavBar */
-
-.navpanel {
-    position:relative;
-    display:flex;
-    justify-content: space-evenly;
-    font-family: 'Raleway', sans-serif;
-    padding:0;
-    margin:0;
-    min-width:10em;
-    min-height:2em;
+/* LAPTOPS & TABLETS (LANDSCAPE) */
+@media only screen and (min-width:1024px) and (max-width:1439px), 
+(min-width:768px) and (max-width:1023px) and (orientation:landscape) {
+    .hubLayout {
+        margin:1% 10% 1% 10%;
+    }    
 }
 
-a {
-    text-decoration: none;
-    color: white;
+/* TABLET PORTRAIT */
+@media only screen and (min-width:480px) and (max-width:768px) and (orientation:portrait) {
+    .hubLayout {
+        margin:2% 5% 2% 5%;
+    }    
 }

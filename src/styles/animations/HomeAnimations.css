@@ -139,3 +139,21 @@
     99% { stroke:#4D9DE0;}
     100% { stroke:#0e0d0d;}
 }
+
+/* Media queries */
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .clean {
+        position: relative;
+        left:6.5em;
+    }
+    .simple {
+        align-self: center;
+    }
+    .intrig {
+        align-self: center;
+    }
+    .code {
+        position: relative
+    }
+}

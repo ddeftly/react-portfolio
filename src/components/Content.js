@@ -24,7 +24,7 @@ const nullQuotes = {
         'Your princess is in another castle',
         'Yeah...try again...',
         'That\'s not the magic word',
-        'This is not the answer you\'re looking for'
+        'These are not the words you\'re looking for'
     ],
     emojis: [
         '¯\\_(ツ)_/¯',
@@ -127,10 +127,10 @@ export default class Content extends React.Component{
             return (
                 <div>
                     <div className='textContainer'>
-                        <h2 id='textLine1'>{quote}</h2>
+                        <p style={{fontFamily:'Roboto'}} id='textLine1'>{quote}</p>
                     </div>
                     <div className='textContainer'>
-                        <h2 id='textLine2'>{emoji}</h2>
+                        <p id='textLine2'>{emoji}</p>
                     </div>
                 </div>
             )

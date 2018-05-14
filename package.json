@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "material-ui": "^0.20.0",
+    "moment": "^2.22.1",
     "popmotion": "^8.1.22",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-drag-drawer": "^3.2.0",
     "react-helmet": "^5.2.0",
     "react-pose": "^1.5.2",
+    "react-responsive": "^4.1.0",
     "react-router-dom": "^4.2.2",
+    "react-router-transition": "^1.2.1",
     "react-scripts": "1.1.4",
+    "react-swipeable-views": "^0.12.13",
     "react-tooltip": "^3.5.1"
   },
   "scripts": {
