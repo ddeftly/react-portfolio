@@ -49,7 +49,7 @@ export class DrawSimple extends React.Component{
         const x = scaleLetters;
 
         return(
-            <div>
+            <div className='simple'>
                 <svg id='S'
                 width={`${25.057041*x}`}
                 height={`${32.802128*x}`}
@@ -234,7 +234,7 @@ export class DrawIntrig extends React.Component{
     render(){
         const x = scaleLetters;
         return(
-            <div>
+            <div className='intrig'>
                 <svg id='I'
                 width={`${4.8000011*x}`}
                 height={`${32.359989*x}`}
@@ -683,7 +683,7 @@ export class DrawDownArrow extends React.Component{
     componentDidMount(){
         setTimeout(() => {
             this.setState({ stage:'done' })
-        },interval*11)
+        },this.props.interval)
     }
 
     render(){

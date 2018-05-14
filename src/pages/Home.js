@@ -24,9 +24,9 @@ class Home extends Component {
         </Helmet>
 
         <div className="headlines">
-          <DrawSimple />
-          <DrawClean />
-          <DrawIntrig />
+          <DrawSimple id='drawSimple'/>
+          <DrawClean id='drawClean'/>
+          <DrawIntrig id='drawIntrig'/>
         </div>
 
         <div className='animationContainer'>
@@ -42,7 +42,7 @@ class Home extends Component {
             <div className="downarrow">
               <Link to="/hub">
                 <RotateDiv>
-                  <DrawDownArrow/>           
+                  <DrawDownArrow interval={1000*11}/>           
                 </RotateDiv>
               </Link>
                 <Route path="/hub" component={Hub} />
@@ -70,7 +70,7 @@ const rotateProps = {
 
 const Rotate = posed.div(rotateProps);
 
-class RotateDiv extends React.Component {
+export class RotateDiv extends React.Component {
   state = { motion: false };
 
   componentDidMount() {
