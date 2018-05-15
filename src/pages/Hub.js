@@ -6,6 +6,7 @@ import HubGrid from '../components/HubGrid';
 import MediaQuery from 'react-responsive';
 import MobileDialog from '../components/Misc/MobileDialog';
 import { DrawDownArrow } from '../components/animations/HomeAnimations'
+import { RotateDiv } from './Home';
 import { Route, Link } from "react-router-dom";
 import '../styles/pages/Hub.css';
 
@@ -36,7 +37,7 @@ export default class Hub extends React.Component {
                         </div>
                         <div className="downarrow">
                             <Link to="/feed">
-                                <DrawDownArrow interval={animationTimings.arrow}/>           
+                            <RotateDiv><DrawDownArrow interval={animationTimings.arrow}/></RotateDiv>           
                             </Link>
                             <Route path="/feed" component={Feed} />
                         </div>

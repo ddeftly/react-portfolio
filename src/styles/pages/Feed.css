@@ -3,13 +3,6 @@
     color:white;
 }
 
-.feedContainer {
-    display:grid;
-    font-family: 'Roboto' sans-serif;
-    justify-items: center;
-    justify-content: center;
-}
-
 .iconContainer {
     display: flex;
     justify-content: center;
@@ -28,7 +21,8 @@
 /* MOBILE */
 @media only screen and (min-width:320px) and (max-width:480px) {
     .feedLayout {
-        margin:0%;
+        margin:0;
+        width:100%;
     }
     #portfolioContainer {
         padding: 1em 15%;
@@ -53,6 +47,6 @@
     }
     .iconContainer {
         position: relative;
-        bottom:1em;
+        bottom:1.5em;
     }
 }

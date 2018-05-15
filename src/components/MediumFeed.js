@@ -34,7 +34,6 @@ export default class MediumFeed extends React.Component {
         if (this.state.loadingState) {
             return(
                 <div className='postContainer'>
-                    <h6 id='latest'>LATEST</h6>
                         {this.state.json.map((item, index) => (
                             <div id='post'>
                                 <a href={item.url}><h2 style={{fontFamily:'Roboto',fontWeight:300}}>{item.title}</h2></a>
@@ -45,7 +44,9 @@ export default class MediumFeed extends React.Component {
             )
         }
         else {
-            return(null)
+            return(
+                <div className='postContainer'></div>
+            )
         }
     }
 }
