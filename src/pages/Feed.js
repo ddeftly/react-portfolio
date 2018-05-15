@@ -31,7 +31,7 @@ export default class Feed extends React.Component {
                 <Helmet>
                     <style>{'body {background-color:#0e0d0d;}'}</style>
                 </Helmet>
-         <div className='feedLayout'>
+                <FeedFade><div className='feedLayout'>
                     <MUI>
                         <Tabs onChange={this.handleChange} 
                             value={this.state.slideIndex}
@@ -60,7 +60,7 @@ export default class Feed extends React.Component {
                         <GitHub/>
                         <Medium/>
                     </div>
-                </div>
+                </div></FeedFade>
             </div>
         )
     }
