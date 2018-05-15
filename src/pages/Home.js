@@ -9,6 +9,7 @@ import {
   DrawBlackLines,
   DrawDownArrow
 } from "../components/animations/HomeAnimations";
+import MediaQuery from 'react-responsive';
 import posed from "react-pose";
 import { tween } from "popmotion";
 import { Route, Link } from "react-router-dom";
@@ -35,10 +36,11 @@ class Home extends Component {
           </div>
 
           <div className='lineContainer'>
+            <MediaQuery query='(min-device-width:480px)'>
               <DrawLine />
               <DrawBlackLines />
+            </MediaQuery>
           </div>
-
             <div className="downarrow">
               <Link to="/hub">
                 <RotateDiv>
