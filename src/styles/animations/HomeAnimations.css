@@ -155,7 +155,8 @@
     }
     .code {
         position: relative
-        
+    }
+    
     .line {
         position: absolute;
         left:7.5em;
